@@ -17,7 +17,6 @@ verify<-function(state,outcome)
         outcomes<-c('heart attack', 'heart failure', 'pneumonia')
         for(o in outcomes)
         {
-                print(o)
                 if(o == outcome)
                 {
                         found<-TRUE
@@ -33,6 +32,5 @@ verify<-function(state,outcome)
 read<-function(name)
 {
         fileName<-paste('../data/',name,sep='')
-        print(fileName)
         read.csv(fileName,colClasses = "character")
 }
